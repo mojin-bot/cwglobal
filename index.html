@@ -46,8 +46,8 @@
         </symbol>       
 
 
-        <symbol id="arrow_toggle"  viewBox="0 0 15 13" >
-            <path d="M7.17007 11.09L13.3801 1H1.00009L7.17007 11.09ZM7.17007 12.09C7.00013 12.0903 6.83289 12.0474 6.68417 11.9651C6.53545 11.8829 6.41017 11.7641 6.3201 11.62L0.170071 1.53C0.0753724 1.37849 0.022999 1.20437 0.0183982 1.02576C0.0137974 0.847143 0.0571142 0.670535 0.143886 0.514345C0.230659 0.358155 0.357721 0.228063 0.511806 0.137606C0.665892 0.047149 0.841371 -0.000355987 1.02005 2.0085e-06H13.4401C13.6188 -0.000355987 13.7942 0.047149 13.9483 0.137606C14.1024 0.228063 14.2295 0.358155 14.3162 0.514345C14.403 0.670535 14.4463 0.847143 14.4417 1.02576C14.4371 1.20437 14.3848 1.37849 14.2901 1.53L8.08004 11.62C7.98482 11.7731 7.84998 11.8976 7.68979 11.9803C7.52959 12.0631 7.35003 12.101 7.17007 12.09Z" />
+        <symbol id="arrow_toggle"  viewBox="0 0 18 14" >
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.60443 2.5695L8.17799 12.0576C8.57568 12.6316 9.4243 12.6316 9.82198 12.0576L16.3955 2.56949C16.855 1.90629 16.3804 1 15.5735 1L2.42643 1C1.61961 1 1.14496 1.90629 1.60443 2.5695ZM7.356 12.6271C8.15137 13.7751 9.84861 13.7751 10.644 12.6271L17.2175 3.13899C18.1365 1.81259 17.1872 0 15.5735 0H2.42643C0.81279 0 -0.13652 1.81259 0.782439 3.13899L7.356 12.6271Z" />        
         </symbol>  
 
         <symbol id="arrow_link" viewBox="0 0 41 23">
@@ -244,25 +244,70 @@
                     }    
                 }
                 .navbar-popup--menu ul{                    
-                    box-sizing: border-box;
-                    padding: 10px 0 0 15px;}
+                    box-sizing: border-box;}
+                /*
                 .navbar-popup--menu ul li{ display: block; overflow: hidden; list-style: none; line-height: 3.2; font-size: var(--ho-display-7); font-weight: 600; border-bottom: 1px solid var(--ho-black);} 
                 .navbar-popup--menu ul li a{ transition: all 2s; display: block; width: 0%; background-color:var(--ho-black); white-space: nowrap;   color: var(--ho-black); }
                 .navbar-popup--menu ul li a:hover{ display: block; width: 100%;  color: var(--ho-white);  background-color:var(--ho-black);}
 
-                .navbar-popup--menu ul li{  height: 0rem; border-width: 0px; transition: all 2s;}
-                /*
-                .navbar-popup--menu ul.active li{  height: 3.2rem; border-width: 0px;}
-*/
-                .navbar-popup--menu div div:hover ul li{height: 3.2rem; border-width: 0px;}
+                .navbar-popup--menu ul li{  height: 0rem; border-width: 0px; transition: all 1s;}
+       
+/*
+                .navbar-popup--menu div div:hover ul li{height: 3.2rem; border-width: 0px;}*/
+                .navbar-popup--menu ul li{ 
+                    display: block; 
+                    overflow: hidden; 
+                    list-style: none; 
+                    line-height: 3.2; 
+                    font-size: var(--ho-display-7); 
+                    font-weight: 600; 
+                    border-bottom: 1px solid var(--ho-gray-500);} 
 
-
+                label {            background-color: #11cccc;            cursor: pointer;        }
+                #ddmenu_d-toggle,
+                #ddmenu_c-toggle,
+                #ddmenu_b-toggle,
+                #ddmenu_a-toggle {            display: none;        }
+                #ddmenu_d,
+                #ddmenu_c,
+                #ddmenu_b,
+                #ddmenu_a {
+                    -background-color: #ffa500;          
+                    overflow: hidden;
+                    max-height: 0;
+                    -webkit-transition: all 1s ease;
+                    
+                    padding: 0px 0 0 0px;
+                }
+                #ddmenu_d-toggle:checked+#ddmenu_d, 
+                #ddmenu_c-toggle:checked+#ddmenu_c, 
+                #ddmenu_b-toggle:checked+#ddmenu_b, 
+                #ddmenu_a-toggle:checked+#ddmenu_a {
+                                    
+                    padding: 0px 0 0 15px;
+                }
+                #ddmenu_d-toggle:checked+#ddmenu_d{ max-height: 200px;    }
+                #ddmenu_c-toggle:checked+#ddmenu_c{max-height: 200px;    }
+                #ddmenu_b-toggle:checked+#ddmenu_b{max-height: 200px;    }
+                #ddmenu_a-toggle:checked+#ddmenu_a {max-height: 600px;    }
             </style>
 
 
             <div class="navbar-popup--menu">
                 <div class="navbar-popup--menu__a">
-                    <div>                       
+                    <div>       
+                        <label for="ddmenu_a-toggle"><h5 >DAP</h5></label>
+                        <input type="checkbox" id="ddmenu_a-toggle" />
+                        <ul id="ddmenu_a">
+                            <li><a href="/product/dap/" >HOME</a></li>
+                            <li><a href="#" >PLENUE D3</a></li>
+                            <li><a href="#" >PLENUE R2</a></li>
+                            <li><a href="#" >PLENUE L</a></li>
+                            <li><a href="#" >PLENUE 2 mark II</a></li>
+                            <li><a href="#" >PLENUE R</a></li>
+                            <li><a href="#" >PLENUE 2</a></li>
+                        </ul>      
+                        <!--          
                         <h5 >DAP</h5> 
                         <ul >
                             <li><a href="/product/dap/" >HOME</a></li>
@@ -272,7 +317,7 @@
                             <li><a href="#" >PLENUE 2 mark II</a></li>
                             <li><a href="#" >PLENUE R</a></li>
                             <li><a href="#" >PLENUE 2</a></li>
-                        </ul>
+                        </ul>-->
                     </div>
                     <div >
                         <h5>EARPHONE</h5> 
@@ -314,11 +359,11 @@
                 </div>               
             </div>  
 
-<!--
 
-            <svg  width="52" height="26"><use xlink:href="#arrow_link"  fill="var(--ho-black)"></use></svg>
-            <svg  width="35" height="35"><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg> 
-                         
+
+       
+            <svg  width="36" height="28"><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg> 
+     <!--               <svg  width="52" height="26"><use xlink:href="#arrow_link"  fill="var(--ho-black)"></use></svg>          
 -->
                 
     
