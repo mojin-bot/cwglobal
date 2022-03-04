@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.fw-300{ font-weight: 300;}
+.fw-400{font-weight: 400;}
+.fw-500{font-weight: 500;}
+.fw-600{font-weight: 600;}
+.fw-700{font-weight: 700;}
+.fw-800{font-weight: 800;}
+
+
+z-0{ z-index:0 ;}
+z-1{ z-index:20 ;}
+z-2{z-index:50}
+z-3{z-index:80}
+z-4{z-index:90}
+z-5{z-index:100 ;}
+z-6{z-index:300}
+z-7{z-index:400}
+z-8{z-index:600}
+z-9{z-index:800}
+z-10{z-index:1000}
+h1{ font-size:5rem ;;}
+h2{ font-size:4.5rem ;}
+h3{ font-size: 4rem;}
+h4{ font-size: 3rem;}
+h5{ font-size:2.1rem ;}
+h6{ font-size:1.1rem ;}
+
+
+
+a{ color: var(--ho-black);}
+*{padding: 0; margin: 0;  text-decoration: none}
+:root {
+    --ho-display-1:7rem ;
+    --ho-display-5:2rem ;
+    --ho-display-7:1rem ;
+    --ho-head-5:2.1rem ;
+    --ho-head-6:1.1rem ;
+
+    --ho-black-opacity:rgba(0,0,0,0);
+    --ho-black:#000;
+    --ho-white:#fff;
+    --ho-gray-100: #f8f9fa;
+    --ho-gray-200: #e9ecef;
+    --ho-gray-300: #dee2e6;
+    --ho-gray-400: #ced4da;
+    --ho-gray-500: #adb5bd;
+    --ho-gray-600: #6c757d;
+    --ho-gray-700: #495057;
+    --ho-gray-800: #343a40;
+    --ho-gray-900: #212529;
+
+    --ho-font-family: 'Open Sans',sans-serif;
+    --ho-font-size:16px;
+    --ho-font-weight:400;
+    --ho-line-height:1.5;
+    --ho-text-align:center;
+    --ho-color:var(--ho-black);
+    --ho-bg: :var(--ho-white);   
+
+    --ho-col-lg: 960px;
+    --ho-col-md: 720px;
+    --ho-col-sm: 540px;
+    --ho-col-xs: none;
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ho-body-font-family);
+    font-size: var(--ho-font-size);
+    font-weight: var(--ho-font-weight);
+    line-height: var(--ho-line-height);
+    color: var(--ho-color);
+    text-align: var(--ho-text-align);
+    background-color: var(--ho-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+

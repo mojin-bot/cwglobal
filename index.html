@@ -1,36 +1,24 @@
 <!DOCTYPE html>
-
-<!--
-    강의
-
-https://www.youtube.com/watch?v=2znzBerWyWU
-
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-
-    <style>
-        .b{ border:1px dotted black}
-
-    </style>
+    <title>mudul1</title>
+    <link href="/data/UI/css/common.css" rel="stylesheet" >
+    <link href="/data/UI/css/common_root.css" rel="stylesheet" >
+    <style></style>
+    <!--/*node.js 설치*/    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
 </head>
 <body>
+
+
+
+
+
+
+    <!--common UI SVG-->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="bootstrap" viewBox="0 0 152 24"  >
-            <title>COWON</title>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M82.6639 26.7742H80.0707L72.6121 10.9672L65.1165 26.7742H62.5232L51.8658 2.23041H58.2565L63.9816 15.6221L70.1944 2.23041H75.1337L81.2078 15.6221L86.963 2.23041H93.3561L82.6639 26.7742Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M146.012 26.617H140.969L127.577 11.6236V26.617H121.573V2.3899H127.08L140.047 16.6692V2.3899H146.012V26.617Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M105.553 1.01004C98.1105 1.01004 92.0526 7.06105 92.0526 14.5035C92.0526 21.9459 98.1105 27.9992 105.553 27.9992C112.995 27.9992 119.051 21.9459 119.051 14.5035C119.051 7.05874 112.995 1.01004 105.553 1.01004ZM105.553 22.1054C101.358 22.1054 97.9464 18.6939 97.9464 14.5012C97.9464 10.3084 101.358 6.89695 105.553 6.89695C109.748 6.89695 113.159 10.3084 113.159 14.5012C113.159 18.6939 109.75 22.1054 105.553 22.1054Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1694 14.5012C24.1694 22.4983 30.6757 29 38.6682 29C46.6653 29 53.1717 22.496 53.1717 14.5012C53.1717 6.50864 46.6653 0.00461997 38.6682 0.00461997C30.6757 0.00461997 24.1694 6.50864 24.1694 14.5012ZM27.3474 14.5012C27.3474 8.25831 32.4277 3.18267 38.6682 3.18267C44.9087 3.18267 49.9913 8.25831 49.9913 14.5012C49.9913 20.7417 44.9087 25.8219 38.6682 25.8219C32.4254 25.8219 27.3474 20.744 27.3474 14.5012Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5963 14.5012C29.5963 19.5051 33.6665 23.5684 38.6682 23.5684C43.6722 23.5684 47.7378 19.5051 47.7378 14.5012C47.7378 9.50179 43.6699 5.43158 38.6682 5.43158C33.6665 5.43158 29.5963 9.50179 29.5963 14.5012ZM32.7767 14.5012C32.7767 11.2561 35.4208 8.60963 38.6682 8.60963C41.9179 8.60963 44.5597 11.2538 44.5597 14.5012C44.5597 17.7485 41.9179 20.3904 38.6682 20.3904C35.4208 20.3904 32.7767 17.7509 32.7767 14.5012Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5012 25.8219C8.256 25.8219 3.18036 20.744 3.18036 14.5012C3.18036 8.26062 8.256 3.18498 14.5012 3.18498C17.6099 3.18498 20.425 4.44002 22.4729 6.47397L24.7218 4.22738C22.0984 1.61791 18.4835 0 14.5012 0C6.50403 0 0 6.50633 0 14.5012C0 22.496 6.50403 29 14.5012 29C18.4835 29 22.0984 27.3867 24.7218 24.7749L22.4729 22.5283C20.4274 24.56 17.6099 25.8219 14.5012 25.8219Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5012 20.3927C11.2538 20.3927 8.60732 17.7509 8.60732 14.5035C8.60732 11.2561 11.2538 8.61425 14.5012 8.61425C16.1098 8.61425 17.5706 9.26373 18.6338 10.3154L20.885 8.06647C19.244 6.44162 16.9881 5.4362 14.5012 5.4362C9.49949 5.4362 5.42696 9.5041 5.42696 14.5035C5.42696 19.5051 9.49718 23.5754 14.5012 23.5754C16.9881 23.5754 19.244 22.5653 20.885 20.9428L18.6338 18.6939C17.5706 19.7432 16.1121 20.3927 14.5012 20.3927Z" fill="black"/>
-        </symbol>
         <symbol id="cowon" viewBox="0 0 152 24"  >
             <title>COWON</title>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M82.6639 26.7742H80.0707L72.6121 10.9672L65.1165 26.7742H62.5232L51.8658 2.23041H58.2565L63.9816 15.6221L70.1944 2.23041H75.1337L81.2078 15.6221L86.963 2.23041H93.3561L82.6639 26.7742Z" fill="black"/>
@@ -48,142 +36,300 @@ https://www.youtube.com/watch?v=2znzBerWyWU
             <path d="M17.0477 45.3311C16.1391 45.3314 15.2394 45.1609 14.3999 44.8293C13.5604 44.4978 12.7976 44.0117 12.1549 43.3988C11.5123 42.7859 11.0024 42.0583 10.6545 41.2573C10.3065 40.4564 10.1273 39.5979 10.127 38.7309C10.1267 37.864 10.3053 37.0055 10.6527 36.2045C11.0001 35.4035 11.5094 34.6756 12.1515 34.0625C12.7936 33.4493 13.556 32.9628 14.3952 32.6308C15.2343 32.2988 16.1337 32.1278 17.0421 32.1275C18.863 32.1273 20.6104 32.8125 21.905 34.0344L24.5497 31.5137C22.544 29.6138 19.8296 28.552 17.0036 28.5619C14.1776 28.5718 11.4715 29.6525 9.48047 31.5664C8.49451 32.514 7.7138 33.6377 7.18291 34.8732C6.65203 36.1088 6.38138 37.432 6.38641 38.7674C6.39144 40.1028 6.67205 41.4242 7.21222 42.6561C7.7524 43.8879 8.54155 45.0062 9.53463 45.947C11.5309 47.8379 14.2295 48.8989 17.0421 48.8989C19.8548 48.8989 22.5534 47.8379 24.5497 45.947L21.9083 43.4221C20.6149 44.6456 18.8665 45.3304 17.0455 45.3269L17.0477 45.3311Z" fill="black"/>
             <path d="M222.47 23.6025C218.505 23.6038 214.684 25.0233 211.761 27.581C208.839 30.1387 207.027 33.6488 206.683 37.4188C206.265 37.3946 205.837 37.3619 205.387 37.3134C197.532 36.5034 198.266 31.4303 192.928 31.4303C187.59 31.4303 188.809 36.3737 181.889 36.4148C174.97 36.4559 174.725 17.5359 167.131 17.5359C159.536 17.5359 160.543 32.6453 151.118 32.6453C141.693 32.6453 142.949 -0.175426 134.788 0.000706383C126.628 0.176839 131.694 17.5359 122.542 17.5359C113.39 17.5359 118.147 9.98224 109.984 9.98224C101.821 9.98224 101.819 35.069 93.3418 35.069C84.8651 35.069 87.8524 27.7853 80.7836 27.7853C73.7149 27.7853 75.8733 35.0827 67.5955 36.8556C66.7865 37.0297 64.7706 37.2016 62.4011 37.2627C62.0185 33.2218 60.0664 29.4635 56.9282 26.7261C53.79 23.9887 49.6926 22.4701 45.441 22.4687H45.4321C42.1326 22.4691 38.9043 23.3839 36.1393 25.102C33.3742 26.8201 31.1915 29.2675 29.8563 32.1469C28.5211 35.0263 28.0909 38.2137 28.6178 41.322C29.1448 44.4303 30.6063 47.3257 32.8248 49.6564C35.0433 51.9871 37.9233 53.6529 41.115 54.4512C44.3066 55.2496 47.6725 55.1463 50.8038 54.1539C53.9351 53.1614 56.6971 51.3225 58.754 48.8606C60.811 46.3987 62.0746 43.4197 62.3912 40.2855C64.7618 40.3667 66.7821 40.5829 67.5922 40.7801C75.87 42.7946 73.7127 51.5274 80.7803 51.5274C87.848 51.5274 84.8629 43.2797 93.3385 43.2797C101.814 43.2797 101.821 71.6877 109.984 71.6877C118.147 71.6877 113.395 63.1447 122.542 63.1447C131.688 63.1447 126.631 82.8009 134.788 82.9992C142.946 83.1975 141.691 46.0398 151.118 46.0398C160.544 46.0398 159.537 63.1447 167.131 63.1447C174.724 63.1447 174.97 41.723 181.889 41.7705C188.809 41.8179 187.59 47.413 192.928 47.413C198.266 47.413 197.492 41.2843 205.347 40.3678C205.815 40.3129 206.263 40.2739 206.701 40.2433C207.006 43.1567 208.192 45.9228 210.112 48.206C212.033 50.4892 214.607 52.1915 217.522 53.1062C220.436 54.021 223.566 54.109 226.532 53.3595C229.498 52.61 232.173 51.0553 234.231 48.8839C236.289 46.7125 237.643 44.0178 238.128 41.1266C238.613 38.2355 238.208 35.2721 236.963 32.596C235.718 29.92 233.686 27.6462 231.114 26.0506C228.541 24.4549 225.539 23.606 222.47 23.6067V23.6025ZM45.4387 51.4156C42.8084 51.4152 40.2373 50.6705 38.0505 49.2756C35.8637 47.8808 34.1593 45.8985 33.153 43.5793C32.1467 41.2602 31.8836 38.7083 32.3969 36.2465C32.9102 33.7846 34.177 31.5233 36.037 29.7485C37.897 27.9736 40.2667 26.7649 42.8464 26.2752C45.4262 25.7856 48.1002 26.0369 50.5303 26.9974C52.9604 27.958 55.0375 29.5846 56.4989 31.6716C57.9604 33.7586 58.7405 36.2123 58.7407 38.7224C58.7378 42.0887 57.3349 45.3163 54.8402 47.6962C52.3455 50.0762 48.9629 51.4139 45.4354 51.4156H45.4387ZM222.47 47.2506C220.704 47.2502 218.977 46.7498 217.508 45.8128C216.039 44.8758 214.894 43.5441 214.219 41.9863C213.543 40.4284 213.366 38.7144 213.711 37.0608C214.056 35.4072 214.908 33.8884 216.157 32.6964C217.407 31.5044 218.998 30.6927 220.731 30.3641C222.464 30.0354 224.26 30.2045 225.893 30.85C227.525 31.4955 228.92 32.5883 229.901 33.9903C230.882 35.3924 231.406 37.0406 231.406 38.7267C231.406 39.8463 231.175 40.955 230.726 41.9894C230.277 43.0238 229.618 43.9636 228.789 44.7551C227.959 45.5467 226.974 46.1745 225.89 46.6027C224.806 47.0309 223.644 47.251 222.47 47.2506Z" fill="black"/>
         </symbol>  
-        <symbol id="facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+        <symbol id="wave" viewBox="0 0 287 75">
+                <path d="M286.1 74.22H0.0100098C24.01 73.12 43.71 69.5999 67.74 55.3999C91.77 41.1999 105.46 0.199993 142.88 -6.81845e-06C180.3 -0.200007 193.37 40.9999 220.42 55.3999C247.47 69.7999 286.1 74.22 286.1 74.22Z"/>
         </symbol>
-        <symbol id="instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
-        </symbol>
-        <symbol id="twitter" viewBox="0 0 16 16">
-            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+
+        <symbol id="close"   viewBox="0 0 21 22">
+                <path d="M20.44 3.13L3.17999 20.39C2.83161 20.7357 2.36081 20.9296 1.87006 20.9296C1.37931 20.9296 0.908382 20.7357 0.559998 20.39C0.214361 20.0416 0.0204468 19.5707 0.0204468 19.08C0.0204468 18.5892 0.214361 18.1184 0.559998 17.77L17.82 0.51001C18.1684 0.164373 18.6392 -0.029541 19.1299 -0.029541C19.6207 -0.029541 20.0916 0.164373 20.44 0.51001C20.7856 0.858394 20.9796 1.3292 20.9796 1.81995C20.9796 2.3107 20.7856 2.78162 20.44 3.13Z"/>
+                <path d="M3.15997 1.12998L20.44 18.43C20.785 18.7767 20.9787 19.2459 20.9787 19.735C20.9787 20.2241 20.785 20.6933 20.44 21.04C20.2688 21.2136 20.0649 21.3514 19.84 21.4454C19.6151 21.5395 19.3737 21.5879 19.1299 21.5879C18.8862 21.5879 18.6449 21.5395 18.42 21.4454C18.1951 21.3514 17.9912 21.2136 17.82 21.04L0.559998 3.79002C0.214361 3.44163 0.0204468 2.97071 0.0204468 2.47996C0.0204468 1.98921 0.214361 1.5184 0.559998 1.17002C0.902252 0.825021 1.36596 0.627691 1.85187 0.620216C2.33778 0.61274 2.80727 0.795673 3.15997 1.12998Z" />
+        </symbol>       
+
+
+        <symbol id="arrow_toggle"  viewBox="0 0 15 13" >
+            <path d="M7.17007 11.09L13.3801 1H1.00009L7.17007 11.09ZM7.17007 12.09C7.00013 12.0903 6.83289 12.0474 6.68417 11.9651C6.53545 11.8829 6.41017 11.7641 6.3201 11.62L0.170071 1.53C0.0753724 1.37849 0.022999 1.20437 0.0183982 1.02576C0.0137974 0.847143 0.0571142 0.670535 0.143886 0.514345C0.230659 0.358155 0.357721 0.228063 0.511806 0.137606C0.665892 0.047149 0.841371 -0.000355987 1.02005 2.0085e-06H13.4401C13.6188 -0.000355987 13.7942 0.047149 13.9483 0.137606C14.1024 0.228063 14.2295 0.358155 14.3162 0.514345C14.403 0.670535 14.4463 0.847143 14.4417 1.02576C14.4371 1.20437 14.3848 1.37849 14.2901 1.53L8.08004 11.62C7.98482 11.7731 7.84998 11.8976 7.68979 11.9803C7.52959 12.0631 7.35003 12.101 7.17007 12.09Z" />
         </symbol>  
-            
+
+        <symbol id="arrow_link" viewBox="0 0 41 23">
+                <path d="M19 9.76795C20.3333 10.5377 20.3333 12.4622 19 13.232L3.25 22.3253C1.91667 23.0951 0.25 22.1329 0.25 20.5933L0.250001 2.40673C0.250001 0.867129 1.91667 -0.0951197 3.25 0.674681L19 9.76795Z" />
+                <path d="M40 9.76795C41.3333 10.5377 41.3333 12.4622 40 13.232L24.25 22.3253C22.9167 23.0951 21.25 22.1329 21.25 20.5933V2.40673C21.25 0.867129 22.9167 -0.0951197 24.25 0.674681L40 9.76795Z" />
+        </symbol>
+        
+        <symbol id="facebook"  viewBox="0 0 54 54" >
+            <path d="M27 54C41.9117 54 54 41.9117 54 27C54 12.0883 41.9117 0 27 0C12.0883 0 0 12.0883 0 27C0 41.9117 12.0883 54 27 54Z" fill="black"/>
+            <path d="M16.63 16.08C16.4001 16.0826 16.1803 16.1751 16.0177 16.3377C15.8551 16.5003 15.7626 16.7201 15.76 16.95V36.88C15.76 37.1107 15.8517 37.332 16.0148 37.4952C16.178 37.6583 16.3993 37.75 16.63 37.75H36.56C36.6742 37.75 36.7874 37.7275 36.8929 37.6838C36.9985 37.6401 37.0944 37.576 37.1752 37.4952C37.256 37.4144 37.32 37.3185 37.3638 37.213C37.4075 37.1074 37.43 36.9943 37.43 36.88V16.95C37.4313 16.8362 37.4101 16.7234 37.3674 16.6179C37.3248 16.5124 37.2616 16.4164 37.1816 16.3354C37.1017 16.2545 37.0064 16.1903 36.9014 16.1464C36.7964 16.1026 36.6838 16.08 36.57 16.08H16.63ZM35.7 36.01H30.7V29.36H33.52L33.94 26.09H30.7V24C30.7 23.05 30.96 22.41 32.32 22.41H34.05V19.48C33.2129 19.3916 32.3717 19.3482 31.53 19.35C31.0144 19.3119 30.4964 19.3758 30.0056 19.5382C29.5147 19.7006 29.0608 19.9583 28.6697 20.2964C28.2786 20.6346 27.958 21.0465 27.7264 21.5087C27.4948 21.9709 27.3567 22.4743 27.32 22.99C27.3 23.2162 27.3 23.4438 27.32 23.67V26.08H24.5V29.35H27.33V36.01H17.49V17.81H35.69L35.7 36.01Z" fill="white"/>
+        </symbol>
+        
+        <symbol id="youtube"  viewBox="0 0 55 54" >
+            <path d="M27.99 54C42.9017 54 54.99 41.9117 54.99 27C54.99 12.0883 42.9017 0 27.99 0C13.0783 0 0.98999 12.0883 0.98999 27C0.98999 41.9117 13.0783 54 27.99 54Z" fill="black"/>
+            <path d="M43.3101 27.02V26.77C43.3101 26.5 43.3101 26.19 43.3101 25.87C43.3101 24.94 43.23 24.01 43.16 23.14C43.0929 22.1293 42.9424 21.1259 42.7101 20.14C42.4847 19.369 42.063 18.6697 41.4863 18.1105C40.9096 17.5514 40.1976 17.1515 39.42 16.95C37.6421 16.6204 35.8383 16.4497 34.03 16.44C32.79 16.39 31.4701 16.36 30.1501 16.35H26.59C25.26 16.35 23.9401 16.35 22.7001 16.44C20.8918 16.4497 19.088 16.6204 17.3101 16.95C16.5236 17.1609 15.8065 17.575 15.2308 18.1508C14.655 18.7265 14.2409 19.4436 14.03 20.23C13.7977 21.216 13.6472 22.2194 13.5801 23.23C13.5101 24.11 13.4601 25.03 13.4401 25.96C13.4401 26.29 13.4401 26.59 13.4401 26.86V27.56C13.4401 27.83 13.4401 28.13 13.4401 28.46C13.4401 29.39 13.5101 30.31 13.5801 31.19C13.6472 32.2007 13.7977 33.2041 14.03 34.19C14.2409 34.9764 14.655 35.6935 15.2308 36.2693C15.8065 36.845 16.5236 37.2592 17.3101 37.47C19.088 37.7997 20.8918 37.9704 22.7001 37.98C23.9401 38.03 25.2601 38.06 26.5801 38.07H30.1401C31.4701 38.07 32.79 38.07 34.03 37.98C35.8383 37.9704 37.6421 37.7997 39.42 37.47C40.2065 37.2592 40.9236 36.845 41.4993 36.2693C42.0751 35.6935 42.4892 34.9764 42.7001 34.19C42.9341 33.2048 43.0813 32.2009 43.1401 31.19C43.2201 30.31 43.26 29.39 43.29 28.46C43.29 28.13 43.29 27.83 43.29 27.56V27.11L43.3101 27.02ZM40.91 27.19V27.43C40.91 27.69 40.91 27.98 40.91 28.29C40.91 29.17 40.8401 30.06 40.7701 30.89C40.7128 31.7456 40.5857 32.5951 40.3901 33.43C40.2887 33.81 40.0894 34.1568 39.8121 34.4358C39.5349 34.7148 39.1894 34.9162 38.8101 35.02C37.2039 35.2901 35.5787 35.4305 33.9501 35.44C32.7401 35.44 31.4301 35.52 30.1301 35.54H26.6501C25.3501 35.54 24.0401 35.49 22.8201 35.44C21.1915 35.4297 19.5663 35.2893 17.9601 35.02C17.5812 34.9153 17.2361 34.7135 16.959 34.4347C16.682 34.1559 16.4824 33.8095 16.3801 33.43C16.1926 32.5939 16.0689 31.7448 16.0101 30.89C15.9401 30.06 15.9001 29.18 15.8701 28.29C15.8701 27.98 15.8701 27.69 15.8701 27.43V26.8C15.8701 26.54 15.8701 26.25 15.8701 25.94C15.8701 25.05 15.9401 24.17 16.0101 23.34C16.0674 22.4851 16.1911 21.6358 16.3801 20.8C16.4815 20.42 16.6807 20.0732 16.9579 19.7943C17.2352 19.5153 17.5807 19.3138 17.9601 19.21C19.5667 18.9424 21.1914 18.7987 22.8201 18.78C24.0401 18.78 25.3501 18.71 26.6501 18.69H30.1201C31.4201 18.69 32.7301 18.69 33.9501 18.78C35.5787 18.7983 37.2035 18.942 38.8101 19.21C39.1894 19.3138 39.5349 19.5153 39.8121 19.7943C40.0894 20.0732 40.2887 20.42 40.3901 20.8C40.5839 21.6349 40.7076 22.4845 40.7601 23.34C40.8301 24.16 40.8701 25.05 40.9001 25.94C40.9001 26.25 40.9001 26.54 40.9001 26.8V27.19H40.91ZM25.41 31.58L33.1401 27.08L25.41 22.65V31.58Z" fill="white"/>
+        </symbol>
+        
+        <symbol id="instagram"  viewBox="0 0 55 54" >
+            <path d="M27.98 54C42.8917 54 54.98 41.9117 54.98 27C54.98 12.0883 42.8917 0 27.98 0C13.0683 0 0.97998 12.0883 0.97998 27C0.97998 41.9117 13.0683 54 27.98 54Z" fill="black"/>
+            <path d="M28.12 17.88C31.12 17.88 31.51 17.88 32.7 17.94C35.78 18.08 37.22 19.54 37.36 22.6C37.41 23.8 37.42 24.15 37.42 27.18C37.42 30.21 37.42 30.57 37.36 31.77C37.21 34.77 35.78 36.28 32.7 36.42C31.5 36.42 31.15 36.48 28.12 36.48C25.09 36.48 24.73 36.48 23.53 36.42C20.45 36.28 19.02 34.81 18.88 31.77C18.88 30.57 18.81 30.21 18.81 27.18C18.81 24.15 18.81 23.79 18.88 22.6C19.02 19.54 20.45 18.08 23.53 17.94C24.77 17.89 25.12 17.88 28.12 17.88ZM28.12 15.88C25.04 15.88 24.65 15.88 23.44 15.95C19.32 16.14 17.03 18.43 16.84 22.55C16.78 23.76 16.77 24.15 16.77 27.23C16.77 30.31 16.77 30.7 16.84 31.91C17.03 36.03 19.31 38.32 23.44 38.51C24.65 38.57 25.04 38.58 28.12 38.58C31.2 38.58 31.59 38.58 32.8 38.51C36.91 38.32 39.21 36.03 39.4 31.91C39.4 30.7 39.46 30.31 39.46 27.23C39.46 24.15 39.46 23.76 39.4 22.55C39.21 18.44 36.92 16.14 32.8 15.95C31.63 15.85 31.24 15.83 28.12 15.83V15.88ZM28.12 21.4C26.9665 21.398 25.8383 21.7383 24.8783 22.3777C23.9182 23.0171 23.1694 23.9269 22.7266 24.992C22.2838 26.0571 22.167 27.2297 22.3908 28.3613C22.6146 29.4928 23.1691 30.5325 23.984 31.3489C24.7989 32.1652 25.8378 32.7215 26.9689 32.9473C28.1001 33.173 29.2729 33.0582 30.3387 32.6172C31.4046 32.1762 32.3157 31.429 32.9568 30.47C33.5978 29.5111 33.94 28.3835 33.94 27.23C33.9479 26.4607 33.8033 25.6974 33.5143 24.9844C33.2254 24.2713 32.7979 23.6226 32.2567 23.0758C31.7155 22.529 31.0712 22.0949 30.3611 21.7987C29.6511 21.5025 28.8894 21.35 28.12 21.35V21.4ZM28.12 31.01C27.3724 31.01 26.6416 30.7883 26.02 30.373C25.3983 29.9576 24.9138 29.3673 24.6277 28.6766C24.3416 27.9859 24.2667 27.2258 24.4126 26.4926C24.5584 25.7593 24.9185 25.0858 25.4471 24.5571C25.9758 24.0285 26.6493 23.6685 27.3826 23.5226C28.1158 23.3768 28.8758 23.4516 29.5665 23.7377C30.2572 24.0238 30.8476 24.5083 31.2629 25.1299C31.6783 25.7516 31.9 26.4824 31.9 27.23C31.8817 28.2213 31.4757 29.1659 30.769 29.8613C30.0624 30.5567 29.1114 30.9476 28.12 30.95V31.01ZM34.18 19.81C33.9086 19.808 33.6427 19.8867 33.4161 20.036C33.1895 20.1853 33.0124 20.3986 32.9072 20.6487C32.8019 20.8989 32.7734 21.1747 32.8251 21.4411C32.8769 21.7075 33.0065 21.9525 33.1977 22.1451C33.3889 22.3377 33.633 22.4692 33.899 22.5229C34.1651 22.5766 34.441 22.55 34.692 22.4467C34.9429 22.3433 35.1574 22.1677 35.3084 21.9422C35.4594 21.7167 35.54 21.4514 35.54 21.18C35.5413 21.0006 35.5071 20.8227 35.4393 20.6565C35.3716 20.4903 35.2716 20.3392 35.1452 20.2119C35.0188 20.0845 34.8684 19.9835 34.7028 19.9145C34.5371 19.8455 34.3594 19.81 34.18 19.81Z" fill="white"/>
+        </symbol>
+        
+        <symbol id="darkmode"  viewBox="0 0 54 54" >
+            <path d="M27 54C41.9117 54 54 41.9117 54 27C54 12.0883 41.9117 0 27 0C12.0883 0 0 12.0883 0 27C0 41.9117 12.0883 54 27 54Z" fill="black"/>
+            <path d="M26.99 31.61C28.2126 31.61 29.3852 31.1243 30.2498 30.2598C31.1143 29.3952 31.6 28.2226 31.6 27C31.6 25.7774 31.1143 24.6048 30.2498 23.7402C29.3852 22.8757 28.2126 22.39 26.99 22.39V31.61Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.99 15.47C24.7096 15.47 22.4803 16.1462 20.5842 17.4131C18.6881 18.6801 17.2103 20.4808 16.3376 22.5876C15.465 24.6945 15.2366 27.0128 15.6815 29.2494C16.1264 31.486 17.2245 33.5405 18.837 35.153C20.4495 36.7655 22.504 37.8636 24.7406 38.3085C26.9772 38.7534 29.2955 38.525 31.4023 37.6523C33.5092 36.7797 35.3098 35.3019 36.5768 33.4058C37.8437 31.5097 38.52 29.2804 38.52 27C38.52 23.9421 37.3052 21.0093 35.1429 18.847C32.9806 16.6848 30.0479 15.47 26.99 15.47ZM26.99 17.78V22.39C25.7673 22.39 24.5948 22.8757 23.7302 23.7402C22.8657 24.6048 22.38 25.7774 22.38 27C22.38 28.2226 22.8657 29.3952 23.7302 30.2598C24.5948 31.1243 25.7673 31.61 26.99 31.61V36.22C29.4353 36.22 31.7804 35.2486 33.5095 33.5195C35.2386 31.7904 36.21 29.4453 36.21 27C36.21 24.5547 35.2386 22.2096 33.5095 20.4805C31.7804 18.7514 29.4353 17.78 26.99 17.78Z" fill="white"/>
+        </symbol>
     </svg>
+    <header>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
-        <div class="container-lg ">
-            <a class="navbar-brand" href="#">
-                <svg class="bi me-2"  width="110" height="62"><use xlink:href="#cowon"></use></svg>
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
-            <ul class="navbar-nav "> 
-              <li class="nav-item  px-2 dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">DAP</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="#">PLENUE D3</a></li>
-                    <li><a class="dropdown-item" href="#">PLENUE 2</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </li>
-            <li class="nav-item  px-2 dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EARPHONE</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="#">PLENUE D3</a></li>
-                    <li><a class="dropdown-item" href="#">PLENUE 2</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </li> 
-            <li class="nav-item  px-2 dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MP3</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="#">PLENUE D3</a></li>
-                    <li><a class="dropdown-item" href="#">PLENUE 2</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </li>
-            <li class="nav-item  px-2"><a href="#" class="nav-link">SUPPORT</a></li>
-            <li class="nav-item pl-2"><a href="#" class="nav-link ">SHOP</a></li>    
-            </ul>
-          </div>
-        </div>
-    </nav>
+        <style>
+            .b{border: 1px dotted forestgreen;}
 
+            .container-fluid{ 
+                display: block;
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                background-color: var(--ho-white);                
+            }
+            .navbar-popup{ 
+                border-color:var(--ho-black);
+                }
+            .navbar-popup--bg{ display: block;      }
+            .navbar-popup--bg  svg{
+                display: block;
+                position: absolute;     
+                width: 337px;
+                height: 80px;                    }
+            .navbar-popup--bg svg:nth-child(1){
+                transform: rotate(180deg) translateX(-50%) scale(1.4,1);
+                top: -1px;
+                right:20px ;                           }
+            .navbar-popup--bg svg:nth-child(2){
+                transform: rotate(0deg) translateX(-50%) scale(1.5,1);
+                bottom: 80px;
+                left:60px;                         }
+            @media screen and (max-width: 960px) {
+                .navbar-popup--bg  svg{ width: 287px; height: 75px;}
+                .navbar-popup--bg svg:nth-child(1){                right:0 ;     transform: rotate(180deg) translateX(-50%) scale(1,1);                      }
+                .navbar-popup--bg svg:nth-child(2){                left:0 ;          transform: rotate(0deg) translateX(-50%) scale(1,1);                  }
+            }
+            .navbar-popup--close{
+                display: block;
+                position:absolute;
+                transform: translate(-50%,50%);
+                right: 0;
+                top: 10px; 
+            }
+            .navbar-popup--close svg{ width: 30px; height: 30px ; fill:var(--ho-white) ; mix-blend-mode: difference;}  
+            .navbar-popup--icon{
+                display: block;
+                position:absolute;
+                transform: translate(0%,0%);
+                right: 0;
+                bottom: 0px; 
+                width: 100%;
+                height: 82px;
+                text-align: left;
+                background-color: var(--ho-black);                
+            }
+            .navbar-popup--icon svg{ width: 65px; height: 65px ; }   
+            .navbar-popup--icon a:first-child svg{margin-left: 20px;}   
+            .navbar-popup--icon>svg{ float: right; cursor: pointer; }
+            .navbar-popup--logo{
+                display: block;
+                position:absolute;
+                left:100px;
+                top:100px;      
+                cursor: pointer;
+            }
+            .navbar-popup--logo svg{ display: block; width: 262px; height:130px;}
+            @media screen and (max-width: 960px) {
+                .navbar-popup--logo{
+                left: 8vw;
+                top: 5vh;    
+                }
+                .navbar-popup--logo svg{ width: 212px; height:100px;}
+            }
+        </style>
 
-
-
-
-
-
-
-
-    <div class="container">
-
-
-        <div style="height:1000px; background-color: red;"></div>
-    </div>
-
-
-
-
-
-    <div class="container" >  
-        <footer class="  py-5  px-0 mx-0" >  
-            <div class="row pb-5 d-none d-lg-block">  
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <svg class="bi me-2" width="202" height="60"><use xlink:href="#cowon_echo" fill="blue"></use></svg> 
-                </a>
-            </div>             
-            <div class="row ">
-                <div class="col-lg-2 col-md-12  pl-2 " >                       
-                    <h5 class="fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">DAP</a></h5> 
-                    <ul class="nav flex-column d-none d-lg-block">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE D3</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE R2</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE L</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE 2 mark II</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE R</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE 2</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-12">
-                    <h5 class="fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">EARPHONE</a></h5> </h5>
-                    <ul class="nav flex-column d-none d-lg-block">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PE-M10</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CK20 ANC</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CK11 Pro</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CK11</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE X30</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-12">
-                    <h5 class="fw-bold pb-3 "><a href="" class=" text-black  text-decoration-none">MP3</a></h5></h5>
-                    <ul class="nav flex-column d-none d-lg-block">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">iAUDIO Hifi</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">iAUDIO U7</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">COWON X7</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-12">
-                    <h5 class="fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">SUPPORT</a></h5></h5>
-                </div>
-                <div class="col-lg-2 col-md-12">
-                    <h5 class="fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">SHOP</a></h5></h5>
-                </div> 
-                <div class="col-lg-2 col-md-12  text-lg-start text-md-start ">    
-                    <h5 class=" fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">BRAND STORY</a></h5></h5>  
-                </div>  
-            </div>  
-            <div class="d-flex justify-content-between py-4 my-4 border-top">                
-                <p class="col-lg-3 ">© 2022 COWON, Inc. All rights reserved.</p>
-                <ul class="list-inline   ">   
-                    <li class="list-inline-item"><a href="#" class="link-dark  text-decoration-none fs-6" >BUSINESS INQUIRY</a></li>
-                    <li class="list-inline-item px-3"><a href="#" class="link-dark  text-decoration-none" >PRIVACY POLICY  </a></li>
-                    <li class="list-inline-item"><a href="#" class="link-dark  text-decoration-none" > TERMS OF SERVICE</a></li>
-                </ul>                
-                <ul class="list-unstyled d-flex ">
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-                </ul>
+        <div class="container-fluid z-8 navbar-popup">
+            <div class="navbar-popup--bg ">
+                <svg ><use xlink:href="#wave" fill="var(--ho-black)"></use></svg>  
+                <svg ><use xlink:href="#wave"></use></svg>                 
+            </div>       
+            <div class="navbar-popup--close">
+                <svg><use xlink:href="#close" ></use></svg> 
+            </div> 
+            <div class="navbar-popup--icon"> 
+                <a href="https://www.facebook.com/cowonsystem" target='_blank'><svg class="z-9"><use xlink:href="#facebook"></use></svg> </a>
+                <a href="https://www.youtube.com/channel/UCMGsvQAVa0SifqnHoJqaKqw" target='_blank'><svg><use xlink:href="#youtube"></use></svg> </a>
+                <a href="https://www.instagram.com/cowon.cowon/?hl=ko" target='_blank'><svg><use xlink:href="#instagram"></use></svg> </a>
+                <svg class="darkmode_on"><use xlink:href="#darkmode"></use></svg>          
             </div>
-        </footer>
-    </div>
+            <div class="navbar-popup--logo">
+                <a href="http://www.cowonglobal.com/">
+                    <svg  width="202" height="60"><use xlink:href="#cowon_echo" fill="var(--ho-black)"></use></svg>                           
+                </a>
+            </div>      
+ 
+            
+            <style>
+                .navbar-popup--menu{ 
+                    
+                    display: block;
+                    width: 400px;
+                    position: relative;
+                    margin-left: 100px;
+                    margin-top: 260px;
+                    text-align: left;
+
+                }
+                @media screen and (max-width: 960px) {
+                        .navbar-popup--menu{ 
+                            display: flex;
+                            position: relative;
+                            flex-direction:column;
+                            justify-content: flex-start;
+                            height: 70vh;
+                            width: 84vw;
+                            margin: 0 auto; 
+                            gap: 6vh;
+                            left: 0;
+                            top: 260px;
+                            transform: translateY(0%); 
+                        }
+                }
+                .navbar-popup--menu h5, .navbar-popup--menu h6{  font-weight: 800;}
+                
+                .navbar-popup--menu .navbar-popup--menu__a{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    left: 550px;               
+                    top: -160px; 
+                }
+                .navbar-popup--menu .navbar-popup--menu__a h5{
+                    font-size: var(--ho-display-1);
+                    letter-spacing: 1.6rem;
+                }
+                .navbar-popup--menu .navbar-popup--menu__b h6{
+                    font-size: var(--ho-display-5);
+                    letter-spacing: 0.4rem;
+                }
+                .navbar-popup--menu .navbar-popup--menu__b{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                }
+                
+                @media screen and (max-width: 960px) {
+                    .navbar-popup--menu .navbar-popup--menu__a,
+                    .navbar-popup--menu .navbar-popup--menu__b{
+                            display: flex;
+                            position: relative;
+                            flex-direction:column;
+                            gap:4vh;
+                            left: 0;
+                            top: 0;
+                            transform: translateY(-15%);       
+                    }
+
+                    .navbar-popup--menu .navbar-popup--menu__a h5{
+                    font-size: var(--ho-head-5);
+                    letter-spacing: 0.6rem;
+                    }
+                    .navbar-popup--menu .navbar-popup--menu__b h6{
+                        font-size:var(--ho-head-6);
+                        letter-spacing: 0.2rem;
+                    }    
+                }
+                .navbar-popup--menu ul{                    
+                    box-sizing: border-box;
+                    padding: 10px 0 0 15px;}
+                .navbar-popup--menu ul li{ display: block; overflow: hidden; list-style: none; line-height: 3.2; font-size: var(--ho-display-7); font-weight: 600; border-bottom: 1px solid var(--ho-black);} 
+                .navbar-popup--menu ul li a{ transition: all 2s; display: block; width: 0%; background-color:var(--ho-black); white-space: nowrap;   color: var(--ho-black); }
+                .navbar-popup--menu ul li a:hover{ display: block; width: 100%;  color: var(--ho-white);  background-color:var(--ho-black);}
+
+                .navbar-popup--menu ul li{  height: 0rem; border-width: 0px; transition: all 2s;}
+                /*
+                .navbar-popup--menu ul.active li{  height: 3.2rem; border-width: 0px;}
+*/
+                .navbar-popup--menu div div:hover ul li{height: 3.2rem; border-width: 0px;}
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            </style>
+
+
+            <div class="navbar-popup--menu">
+                <div class="navbar-popup--menu__a">
+                    <div>                       
+                        <h5 >DAP</h5> 
+                        <ul >
+                            <li><a href="/product/dap/" >HOME</a></li>
+                            <li><a href="#" >PLENUE D3</a></li>
+                            <li><a href="#" >PLENUE R2</a></li>
+                            <li><a href="#" >PLENUE L</a></li>
+                            <li><a href="#" >PLENUE 2 mark II</a></li>
+                            <li><a href="#" >PLENUE R</a></li>
+                            <li><a href="#" >PLENUE 2</a></li>
+                        </ul>
+                    </div>
+                    <div >
+                        <h5>EARPHONE</h5> 
+                        <ul >
+                            <li><a href="#" >HOME</a></li>
+                            <li><a href="#" >PE-M10</a></li>
+                            <li><a href="#" >CK20 ANC</a></li>
+                            <li><a href="#" >CK11 Pro</a></li>
+                            <li><a href="#" >CK11</a></li>
+                            <li><a href="#" >PLENUE X30</a></li>
+                        </ul>
+                    </div>
+                    <div >
+                        <h5>MP3</h5>
+                        <ul>
+                            <li><a href="#" >HOME</a></li>
+                            <li><a href="#" >iAUDIO Hifi</a></li>
+                            <li><a href="#" >iAUDIO U7</a></li>
+                            <li><a href="#" >COWON X7</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-popup--menu__b">
+                    <div >
+                        <h6>SUPPORT</h6>
+                        <ul class="active">
+                            <li><a href="#" >Notice</a></li>
+                            <li><a href="#" >FAQ/QnA</a></li>
+                            <li><a href="#" >Firmware</a></li>
+                            <li><a href="#" >Manual</a></li>
+                        </ul>
+                    </div>
+                    <div >
+                        <h6>SHOP</h6>
+                    </div> 
+                    <div >    
+                        <h6>BRAND STORY</h6>
+                    </div>                      
+                </div>               
+            </div>  
+
+<!--
+
+            <svg  width="52" height="26"><use xlink:href="#arrow_link"  fill="var(--ho-black)"></use></svg>
+            <svg  width="35" height="35"><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg> 
+                         
+-->
+                
+    
+                  
+        </div>
+    </header>
+
+
+
+
+
+    
 </body>
 </html>
