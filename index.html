@@ -9,12 +9,10 @@
     <link href="/data/UI/css/common_root.css" rel="stylesheet" >
     <style></style>
     <!--/*node.js 설치*/    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+    <script src="https://releases.jquery.com/git/jquery-1.x-git.min.js"></script>
+    <script src="/data/UI/JS/common.js"></script>
 </head>
 <body>
-
-
-
-
 
 
     <!--common UI SVG-->
@@ -43,8 +41,7 @@
         <symbol id="close"   viewBox="0 0 21 22">
                 <path d="M20.44 3.13L3.17999 20.39C2.83161 20.7357 2.36081 20.9296 1.87006 20.9296C1.37931 20.9296 0.908382 20.7357 0.559998 20.39C0.214361 20.0416 0.0204468 19.5707 0.0204468 19.08C0.0204468 18.5892 0.214361 18.1184 0.559998 17.77L17.82 0.51001C18.1684 0.164373 18.6392 -0.029541 19.1299 -0.029541C19.6207 -0.029541 20.0916 0.164373 20.44 0.51001C20.7856 0.858394 20.9796 1.3292 20.9796 1.81995C20.9796 2.3107 20.7856 2.78162 20.44 3.13Z"/>
                 <path d="M3.15997 1.12998L20.44 18.43C20.785 18.7767 20.9787 19.2459 20.9787 19.735C20.9787 20.2241 20.785 20.6933 20.44 21.04C20.2688 21.2136 20.0649 21.3514 19.84 21.4454C19.6151 21.5395 19.3737 21.5879 19.1299 21.5879C18.8862 21.5879 18.6449 21.5395 18.42 21.4454C18.1951 21.3514 17.9912 21.2136 17.82 21.04L0.559998 3.79002C0.214361 3.44163 0.0204468 2.97071 0.0204468 2.47996C0.0204468 1.98921 0.214361 1.5184 0.559998 1.17002C0.902252 0.825021 1.36596 0.627691 1.85187 0.620216C2.33778 0.61274 2.80727 0.795673 3.15997 1.12998Z" />
-        </symbol>       
-
+        </symbol> 
 
         <symbol id="arrow_toggle"  viewBox="0 0 18 14" >
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.60443 2.5695L8.17799 12.0576C8.57568 12.6316 9.4243 12.6316 9.82198 12.0576L16.3955 2.56949C16.855 1.90629 16.3804 1 15.5735 1L2.42643 1C1.61961 1 1.14496 1.90629 1.60443 2.5695ZM7.356 12.6271C8.15137 13.7751 9.84861 13.7751 10.644 12.6271L17.2175 3.13899C18.1365 1.81259 17.1872 0 15.5735 0H2.42643C0.81279 0 -0.13652 1.81259 0.782439 3.13899L7.356 12.6271Z" />        
@@ -56,100 +53,105 @@
         </symbol>
         
         <symbol id="facebook"  viewBox="0 0 54 54" >
-            <path d="M27 54C41.9117 54 54 41.9117 54 27C54 12.0883 41.9117 0 27 0C12.0883 0 0 12.0883 0 27C0 41.9117 12.0883 54 27 54Z" fill="black"/>
-            <path d="M16.63 16.08C16.4001 16.0826 16.1803 16.1751 16.0177 16.3377C15.8551 16.5003 15.7626 16.7201 15.76 16.95V36.88C15.76 37.1107 15.8517 37.332 16.0148 37.4952C16.178 37.6583 16.3993 37.75 16.63 37.75H36.56C36.6742 37.75 36.7874 37.7275 36.8929 37.6838C36.9985 37.6401 37.0944 37.576 37.1752 37.4952C37.256 37.4144 37.32 37.3185 37.3638 37.213C37.4075 37.1074 37.43 36.9943 37.43 36.88V16.95C37.4313 16.8362 37.4101 16.7234 37.3674 16.6179C37.3248 16.5124 37.2616 16.4164 37.1816 16.3354C37.1017 16.2545 37.0064 16.1903 36.9014 16.1464C36.7964 16.1026 36.6838 16.08 36.57 16.08H16.63ZM35.7 36.01H30.7V29.36H33.52L33.94 26.09H30.7V24C30.7 23.05 30.96 22.41 32.32 22.41H34.05V19.48C33.2129 19.3916 32.3717 19.3482 31.53 19.35C31.0144 19.3119 30.4964 19.3758 30.0056 19.5382C29.5147 19.7006 29.0608 19.9583 28.6697 20.2964C28.2786 20.6346 27.958 21.0465 27.7264 21.5087C27.4948 21.9709 27.3567 22.4743 27.32 22.99C27.3 23.2162 27.3 23.4438 27.32 23.67V26.08H24.5V29.35H27.33V36.01H17.49V17.81H35.69L35.7 36.01Z" fill="white"/>
+            <path d="M27 54C41.9117 54 54 41.9117 54 27C54 12.0883 41.9117 0 27 0C12.0883 0 0 12.0883 0 27C0 41.9117 12.0883 54 27 54Z" fill="var(--ho-black)"/>
+            <path d="M16.63 16.08C16.4001 16.0826 16.1803 16.1751 16.0177 16.3377C15.8551 16.5003 15.7626 16.7201 15.76 16.95V36.88C15.76 37.1107 15.8517 37.332 16.0148 37.4952C16.178 37.6583 16.3993 37.75 16.63 37.75H36.56C36.6742 37.75 36.7874 37.7275 36.8929 37.6838C36.9985 37.6401 37.0944 37.576 37.1752 37.4952C37.256 37.4144 37.32 37.3185 37.3638 37.213C37.4075 37.1074 37.43 36.9943 37.43 36.88V16.95C37.4313 16.8362 37.4101 16.7234 37.3674 16.6179C37.3248 16.5124 37.2616 16.4164 37.1816 16.3354C37.1017 16.2545 37.0064 16.1903 36.9014 16.1464C36.7964 16.1026 36.6838 16.08 36.57 16.08H16.63ZM35.7 36.01H30.7V29.36H33.52L33.94 26.09H30.7V24C30.7 23.05 30.96 22.41 32.32 22.41H34.05V19.48C33.2129 19.3916 32.3717 19.3482 31.53 19.35C31.0144 19.3119 30.4964 19.3758 30.0056 19.5382C29.5147 19.7006 29.0608 19.9583 28.6697 20.2964C28.2786 20.6346 27.958 21.0465 27.7264 21.5087C27.4948 21.9709 27.3567 22.4743 27.32 22.99C27.3 23.2162 27.3 23.4438 27.32 23.67V26.08H24.5V29.35H27.33V36.01H17.49V17.81H35.69L35.7 36.01Z" fill="var(--ho-white)"/>
         </symbol>
         
         <symbol id="youtube"  viewBox="0 0 55 54" >
-            <path d="M27.99 54C42.9017 54 54.99 41.9117 54.99 27C54.99 12.0883 42.9017 0 27.99 0C13.0783 0 0.98999 12.0883 0.98999 27C0.98999 41.9117 13.0783 54 27.99 54Z" fill="black"/>
-            <path d="M43.3101 27.02V26.77C43.3101 26.5 43.3101 26.19 43.3101 25.87C43.3101 24.94 43.23 24.01 43.16 23.14C43.0929 22.1293 42.9424 21.1259 42.7101 20.14C42.4847 19.369 42.063 18.6697 41.4863 18.1105C40.9096 17.5514 40.1976 17.1515 39.42 16.95C37.6421 16.6204 35.8383 16.4497 34.03 16.44C32.79 16.39 31.4701 16.36 30.1501 16.35H26.59C25.26 16.35 23.9401 16.35 22.7001 16.44C20.8918 16.4497 19.088 16.6204 17.3101 16.95C16.5236 17.1609 15.8065 17.575 15.2308 18.1508C14.655 18.7265 14.2409 19.4436 14.03 20.23C13.7977 21.216 13.6472 22.2194 13.5801 23.23C13.5101 24.11 13.4601 25.03 13.4401 25.96C13.4401 26.29 13.4401 26.59 13.4401 26.86V27.56C13.4401 27.83 13.4401 28.13 13.4401 28.46C13.4401 29.39 13.5101 30.31 13.5801 31.19C13.6472 32.2007 13.7977 33.2041 14.03 34.19C14.2409 34.9764 14.655 35.6935 15.2308 36.2693C15.8065 36.845 16.5236 37.2592 17.3101 37.47C19.088 37.7997 20.8918 37.9704 22.7001 37.98C23.9401 38.03 25.2601 38.06 26.5801 38.07H30.1401C31.4701 38.07 32.79 38.07 34.03 37.98C35.8383 37.9704 37.6421 37.7997 39.42 37.47C40.2065 37.2592 40.9236 36.845 41.4993 36.2693C42.0751 35.6935 42.4892 34.9764 42.7001 34.19C42.9341 33.2048 43.0813 32.2009 43.1401 31.19C43.2201 30.31 43.26 29.39 43.29 28.46C43.29 28.13 43.29 27.83 43.29 27.56V27.11L43.3101 27.02ZM40.91 27.19V27.43C40.91 27.69 40.91 27.98 40.91 28.29C40.91 29.17 40.8401 30.06 40.7701 30.89C40.7128 31.7456 40.5857 32.5951 40.3901 33.43C40.2887 33.81 40.0894 34.1568 39.8121 34.4358C39.5349 34.7148 39.1894 34.9162 38.8101 35.02C37.2039 35.2901 35.5787 35.4305 33.9501 35.44C32.7401 35.44 31.4301 35.52 30.1301 35.54H26.6501C25.3501 35.54 24.0401 35.49 22.8201 35.44C21.1915 35.4297 19.5663 35.2893 17.9601 35.02C17.5812 34.9153 17.2361 34.7135 16.959 34.4347C16.682 34.1559 16.4824 33.8095 16.3801 33.43C16.1926 32.5939 16.0689 31.7448 16.0101 30.89C15.9401 30.06 15.9001 29.18 15.8701 28.29C15.8701 27.98 15.8701 27.69 15.8701 27.43V26.8C15.8701 26.54 15.8701 26.25 15.8701 25.94C15.8701 25.05 15.9401 24.17 16.0101 23.34C16.0674 22.4851 16.1911 21.6358 16.3801 20.8C16.4815 20.42 16.6807 20.0732 16.9579 19.7943C17.2352 19.5153 17.5807 19.3138 17.9601 19.21C19.5667 18.9424 21.1914 18.7987 22.8201 18.78C24.0401 18.78 25.3501 18.71 26.6501 18.69H30.1201C31.4201 18.69 32.7301 18.69 33.9501 18.78C35.5787 18.7983 37.2035 18.942 38.8101 19.21C39.1894 19.3138 39.5349 19.5153 39.8121 19.7943C40.0894 20.0732 40.2887 20.42 40.3901 20.8C40.5839 21.6349 40.7076 22.4845 40.7601 23.34C40.8301 24.16 40.8701 25.05 40.9001 25.94C40.9001 26.25 40.9001 26.54 40.9001 26.8V27.19H40.91ZM25.41 31.58L33.1401 27.08L25.41 22.65V31.58Z" fill="white"/>
+            <path d="M27.99 54C42.9017 54 54.99 41.9117 54.99 27C54.99 12.0883 42.9017 0 27.99 0C13.0783 0 0.98999 12.0883 0.98999 27C0.98999 41.9117 13.0783 54 27.99 54Z" fill="var(--ho-black)"/>
+            <path d="M43.3101 27.02V26.77C43.3101 26.5 43.3101 26.19 43.3101 25.87C43.3101 24.94 43.23 24.01 43.16 23.14C43.0929 22.1293 42.9424 21.1259 42.7101 20.14C42.4847 19.369 42.063 18.6697 41.4863 18.1105C40.9096 17.5514 40.1976 17.1515 39.42 16.95C37.6421 16.6204 35.8383 16.4497 34.03 16.44C32.79 16.39 31.4701 16.36 30.1501 16.35H26.59C25.26 16.35 23.9401 16.35 22.7001 16.44C20.8918 16.4497 19.088 16.6204 17.3101 16.95C16.5236 17.1609 15.8065 17.575 15.2308 18.1508C14.655 18.7265 14.2409 19.4436 14.03 20.23C13.7977 21.216 13.6472 22.2194 13.5801 23.23C13.5101 24.11 13.4601 25.03 13.4401 25.96C13.4401 26.29 13.4401 26.59 13.4401 26.86V27.56C13.4401 27.83 13.4401 28.13 13.4401 28.46C13.4401 29.39 13.5101 30.31 13.5801 31.19C13.6472 32.2007 13.7977 33.2041 14.03 34.19C14.2409 34.9764 14.655 35.6935 15.2308 36.2693C15.8065 36.845 16.5236 37.2592 17.3101 37.47C19.088 37.7997 20.8918 37.9704 22.7001 37.98C23.9401 38.03 25.2601 38.06 26.5801 38.07H30.1401C31.4701 38.07 32.79 38.07 34.03 37.98C35.8383 37.9704 37.6421 37.7997 39.42 37.47C40.2065 37.2592 40.9236 36.845 41.4993 36.2693C42.0751 35.6935 42.4892 34.9764 42.7001 34.19C42.9341 33.2048 43.0813 32.2009 43.1401 31.19C43.2201 30.31 43.26 29.39 43.29 28.46C43.29 28.13 43.29 27.83 43.29 27.56V27.11L43.3101 27.02ZM40.91 27.19V27.43C40.91 27.69 40.91 27.98 40.91 28.29C40.91 29.17 40.8401 30.06 40.7701 30.89C40.7128 31.7456 40.5857 32.5951 40.3901 33.43C40.2887 33.81 40.0894 34.1568 39.8121 34.4358C39.5349 34.7148 39.1894 34.9162 38.8101 35.02C37.2039 35.2901 35.5787 35.4305 33.9501 35.44C32.7401 35.44 31.4301 35.52 30.1301 35.54H26.6501C25.3501 35.54 24.0401 35.49 22.8201 35.44C21.1915 35.4297 19.5663 35.2893 17.9601 35.02C17.5812 34.9153 17.2361 34.7135 16.959 34.4347C16.682 34.1559 16.4824 33.8095 16.3801 33.43C16.1926 32.5939 16.0689 31.7448 16.0101 30.89C15.9401 30.06 15.9001 29.18 15.8701 28.29C15.8701 27.98 15.8701 27.69 15.8701 27.43V26.8C15.8701 26.54 15.8701 26.25 15.8701 25.94C15.8701 25.05 15.9401 24.17 16.0101 23.34C16.0674 22.4851 16.1911 21.6358 16.3801 20.8C16.4815 20.42 16.6807 20.0732 16.9579 19.7943C17.2352 19.5153 17.5807 19.3138 17.9601 19.21C19.5667 18.9424 21.1914 18.7987 22.8201 18.78C24.0401 18.78 25.3501 18.71 26.6501 18.69H30.1201C31.4201 18.69 32.7301 18.69 33.9501 18.78C35.5787 18.7983 37.2035 18.942 38.8101 19.21C39.1894 19.3138 39.5349 19.5153 39.8121 19.7943C40.0894 20.0732 40.2887 20.42 40.3901 20.8C40.5839 21.6349 40.7076 22.4845 40.7601 23.34C40.8301 24.16 40.8701 25.05 40.9001 25.94C40.9001 26.25 40.9001 26.54 40.9001 26.8V27.19H40.91ZM25.41 31.58L33.1401 27.08L25.41 22.65V31.58Z" fill="var(--ho-white)"/>
         </symbol>
         
         <symbol id="instagram"  viewBox="0 0 55 54" >
-            <path d="M27.98 54C42.8917 54 54.98 41.9117 54.98 27C54.98 12.0883 42.8917 0 27.98 0C13.0683 0 0.97998 12.0883 0.97998 27C0.97998 41.9117 13.0683 54 27.98 54Z" fill="black"/>
-            <path d="M28.12 17.88C31.12 17.88 31.51 17.88 32.7 17.94C35.78 18.08 37.22 19.54 37.36 22.6C37.41 23.8 37.42 24.15 37.42 27.18C37.42 30.21 37.42 30.57 37.36 31.77C37.21 34.77 35.78 36.28 32.7 36.42C31.5 36.42 31.15 36.48 28.12 36.48C25.09 36.48 24.73 36.48 23.53 36.42C20.45 36.28 19.02 34.81 18.88 31.77C18.88 30.57 18.81 30.21 18.81 27.18C18.81 24.15 18.81 23.79 18.88 22.6C19.02 19.54 20.45 18.08 23.53 17.94C24.77 17.89 25.12 17.88 28.12 17.88ZM28.12 15.88C25.04 15.88 24.65 15.88 23.44 15.95C19.32 16.14 17.03 18.43 16.84 22.55C16.78 23.76 16.77 24.15 16.77 27.23C16.77 30.31 16.77 30.7 16.84 31.91C17.03 36.03 19.31 38.32 23.44 38.51C24.65 38.57 25.04 38.58 28.12 38.58C31.2 38.58 31.59 38.58 32.8 38.51C36.91 38.32 39.21 36.03 39.4 31.91C39.4 30.7 39.46 30.31 39.46 27.23C39.46 24.15 39.46 23.76 39.4 22.55C39.21 18.44 36.92 16.14 32.8 15.95C31.63 15.85 31.24 15.83 28.12 15.83V15.88ZM28.12 21.4C26.9665 21.398 25.8383 21.7383 24.8783 22.3777C23.9182 23.0171 23.1694 23.9269 22.7266 24.992C22.2838 26.0571 22.167 27.2297 22.3908 28.3613C22.6146 29.4928 23.1691 30.5325 23.984 31.3489C24.7989 32.1652 25.8378 32.7215 26.9689 32.9473C28.1001 33.173 29.2729 33.0582 30.3387 32.6172C31.4046 32.1762 32.3157 31.429 32.9568 30.47C33.5978 29.5111 33.94 28.3835 33.94 27.23C33.9479 26.4607 33.8033 25.6974 33.5143 24.9844C33.2254 24.2713 32.7979 23.6226 32.2567 23.0758C31.7155 22.529 31.0712 22.0949 30.3611 21.7987C29.6511 21.5025 28.8894 21.35 28.12 21.35V21.4ZM28.12 31.01C27.3724 31.01 26.6416 30.7883 26.02 30.373C25.3983 29.9576 24.9138 29.3673 24.6277 28.6766C24.3416 27.9859 24.2667 27.2258 24.4126 26.4926C24.5584 25.7593 24.9185 25.0858 25.4471 24.5571C25.9758 24.0285 26.6493 23.6685 27.3826 23.5226C28.1158 23.3768 28.8758 23.4516 29.5665 23.7377C30.2572 24.0238 30.8476 24.5083 31.2629 25.1299C31.6783 25.7516 31.9 26.4824 31.9 27.23C31.8817 28.2213 31.4757 29.1659 30.769 29.8613C30.0624 30.5567 29.1114 30.9476 28.12 30.95V31.01ZM34.18 19.81C33.9086 19.808 33.6427 19.8867 33.4161 20.036C33.1895 20.1853 33.0124 20.3986 32.9072 20.6487C32.8019 20.8989 32.7734 21.1747 32.8251 21.4411C32.8769 21.7075 33.0065 21.9525 33.1977 22.1451C33.3889 22.3377 33.633 22.4692 33.899 22.5229C34.1651 22.5766 34.441 22.55 34.692 22.4467C34.9429 22.3433 35.1574 22.1677 35.3084 21.9422C35.4594 21.7167 35.54 21.4514 35.54 21.18C35.5413 21.0006 35.5071 20.8227 35.4393 20.6565C35.3716 20.4903 35.2716 20.3392 35.1452 20.2119C35.0188 20.0845 34.8684 19.9835 34.7028 19.9145C34.5371 19.8455 34.3594 19.81 34.18 19.81Z" fill="white"/>
+            <path d="M27.98 54C42.8917 54 54.98 41.9117 54.98 27C54.98 12.0883 42.8917 0 27.98 0C13.0683 0 0.97998 12.0883 0.97998 27C0.97998 41.9117 13.0683 54 27.98 54Z" fill="var(--ho-black)"/>
+            <path d="M28.12 17.88C31.12 17.88 31.51 17.88 32.7 17.94C35.78 18.08 37.22 19.54 37.36 22.6C37.41 23.8 37.42 24.15 37.42 27.18C37.42 30.21 37.42 30.57 37.36 31.77C37.21 34.77 35.78 36.28 32.7 36.42C31.5 36.42 31.15 36.48 28.12 36.48C25.09 36.48 24.73 36.48 23.53 36.42C20.45 36.28 19.02 34.81 18.88 31.77C18.88 30.57 18.81 30.21 18.81 27.18C18.81 24.15 18.81 23.79 18.88 22.6C19.02 19.54 20.45 18.08 23.53 17.94C24.77 17.89 25.12 17.88 28.12 17.88ZM28.12 15.88C25.04 15.88 24.65 15.88 23.44 15.95C19.32 16.14 17.03 18.43 16.84 22.55C16.78 23.76 16.77 24.15 16.77 27.23C16.77 30.31 16.77 30.7 16.84 31.91C17.03 36.03 19.31 38.32 23.44 38.51C24.65 38.57 25.04 38.58 28.12 38.58C31.2 38.58 31.59 38.58 32.8 38.51C36.91 38.32 39.21 36.03 39.4 31.91C39.4 30.7 39.46 30.31 39.46 27.23C39.46 24.15 39.46 23.76 39.4 22.55C39.21 18.44 36.92 16.14 32.8 15.95C31.63 15.85 31.24 15.83 28.12 15.83V15.88ZM28.12 21.4C26.9665 21.398 25.8383 21.7383 24.8783 22.3777C23.9182 23.0171 23.1694 23.9269 22.7266 24.992C22.2838 26.0571 22.167 27.2297 22.3908 28.3613C22.6146 29.4928 23.1691 30.5325 23.984 31.3489C24.7989 32.1652 25.8378 32.7215 26.9689 32.9473C28.1001 33.173 29.2729 33.0582 30.3387 32.6172C31.4046 32.1762 32.3157 31.429 32.9568 30.47C33.5978 29.5111 33.94 28.3835 33.94 27.23C33.9479 26.4607 33.8033 25.6974 33.5143 24.9844C33.2254 24.2713 32.7979 23.6226 32.2567 23.0758C31.7155 22.529 31.0712 22.0949 30.3611 21.7987C29.6511 21.5025 28.8894 21.35 28.12 21.35V21.4ZM28.12 31.01C27.3724 31.01 26.6416 30.7883 26.02 30.373C25.3983 29.9576 24.9138 29.3673 24.6277 28.6766C24.3416 27.9859 24.2667 27.2258 24.4126 26.4926C24.5584 25.7593 24.9185 25.0858 25.4471 24.5571C25.9758 24.0285 26.6493 23.6685 27.3826 23.5226C28.1158 23.3768 28.8758 23.4516 29.5665 23.7377C30.2572 24.0238 30.8476 24.5083 31.2629 25.1299C31.6783 25.7516 31.9 26.4824 31.9 27.23C31.8817 28.2213 31.4757 29.1659 30.769 29.8613C30.0624 30.5567 29.1114 30.9476 28.12 30.95V31.01ZM34.18 19.81C33.9086 19.808 33.6427 19.8867 33.4161 20.036C33.1895 20.1853 33.0124 20.3986 32.9072 20.6487C32.8019 20.8989 32.7734 21.1747 32.8251 21.4411C32.8769 21.7075 33.0065 21.9525 33.1977 22.1451C33.3889 22.3377 33.633 22.4692 33.899 22.5229C34.1651 22.5766 34.441 22.55 34.692 22.4467C34.9429 22.3433 35.1574 22.1677 35.3084 21.9422C35.4594 21.7167 35.54 21.4514 35.54 21.18C35.5413 21.0006 35.5071 20.8227 35.4393 20.6565C35.3716 20.4903 35.2716 20.3392 35.1452 20.2119C35.0188 20.0845 34.8684 19.9835 34.7028 19.9145C34.5371 19.8455 34.3594 19.81 34.18 19.81Z" fill="var(--ho-white)"/>
         </symbol>
         
         <symbol id="darkmode"  viewBox="0 0 54 54" >
-            <path d="M27 54C41.9117 54 54 41.9117 54 27C54 12.0883 41.9117 0 27 0C12.0883 0 0 12.0883 0 27C0 41.9117 12.0883 54 27 54Z" fill="black"/>
-            <path d="M26.99 31.61C28.2126 31.61 29.3852 31.1243 30.2498 30.2598C31.1143 29.3952 31.6 28.2226 31.6 27C31.6 25.7774 31.1143 24.6048 30.2498 23.7402C29.3852 22.8757 28.2126 22.39 26.99 22.39V31.61Z" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.99 15.47C24.7096 15.47 22.4803 16.1462 20.5842 17.4131C18.6881 18.6801 17.2103 20.4808 16.3376 22.5876C15.465 24.6945 15.2366 27.0128 15.6815 29.2494C16.1264 31.486 17.2245 33.5405 18.837 35.153C20.4495 36.7655 22.504 37.8636 24.7406 38.3085C26.9772 38.7534 29.2955 38.525 31.4023 37.6523C33.5092 36.7797 35.3098 35.3019 36.5768 33.4058C37.8437 31.5097 38.52 29.2804 38.52 27C38.52 23.9421 37.3052 21.0093 35.1429 18.847C32.9806 16.6848 30.0479 15.47 26.99 15.47ZM26.99 17.78V22.39C25.7673 22.39 24.5948 22.8757 23.7302 23.7402C22.8657 24.6048 22.38 25.7774 22.38 27C22.38 28.2226 22.8657 29.3952 23.7302 30.2598C24.5948 31.1243 25.7673 31.61 26.99 31.61V36.22C29.4353 36.22 31.7804 35.2486 33.5095 33.5195C35.2386 31.7904 36.21 29.4453 36.21 27C36.21 24.5547 35.2386 22.2096 33.5095 20.4805C31.7804 18.7514 29.4353 17.78 26.99 17.78Z" fill="white"/>
+            <path d="M27 54C41.9117 54 54 41.9117 54 27C54 12.0883 41.9117 0 27 0C12.0883 0 0 12.0883 0 27C0 41.9117 12.0883 54 27 54Z" fill="var(--ho-black)"/>
+            <path d="M26.99 31.61C28.2126 31.61 29.3852 31.1243 30.2498 30.2598C31.1143 29.3952 31.6 28.2226 31.6 27C31.6 25.7774 31.1143 24.6048 30.2498 23.7402C29.3852 22.8757 28.2126 22.39 26.99 22.39V31.61Z" fill="var(--ho-white)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.99 15.47C24.7096 15.47 22.4803 16.1462 20.5842 17.4131C18.6881 18.6801 17.2103 20.4808 16.3376 22.5876C15.465 24.6945 15.2366 27.0128 15.6815 29.2494C16.1264 31.486 17.2245 33.5405 18.837 35.153C20.4495 36.7655 22.504 37.8636 24.7406 38.3085C26.9772 38.7534 29.2955 38.525 31.4023 37.6523C33.5092 36.7797 35.3098 35.3019 36.5768 33.4058C37.8437 31.5097 38.52 29.2804 38.52 27C38.52 23.9421 37.3052 21.0093 35.1429 18.847C32.9806 16.6848 30.0479 15.47 26.99 15.47ZM26.99 17.78V22.39C25.7673 22.39 24.5948 22.8757 23.7302 23.7402C22.8657 24.6048 22.38 25.7774 22.38 27C22.38 28.2226 22.8657 29.3952 23.7302 30.2598C24.5948 31.1243 25.7673 31.61 26.99 31.61V36.22C29.4353 36.22 31.7804 35.2486 33.5095 33.5195C35.2386 31.7904 36.21 29.4453 36.21 27C36.21 24.5547 35.2386 22.2096 33.5095 20.4805C31.7804 18.7514 29.4353 17.78 26.99 17.78Z" fill="var(--ho-white)"/>
         </symbol>
+
+
+            
+
+        <symbol id="hamburger"  viewBox="0 0 79 79" >
+            <path d="M39.5 79C61.3152 79 79 61.3152 79 39.5C79 17.6848 61.3152 0 39.5 0C17.6848 0 0 17.6848 0 39.5C0 61.3152 17.6848 79 39.5 79Z" fill="var(--ho-black)"/>
+            <path d="M55.4401 37.44V32.66H23.5701V37.44H55.4401Z" fill="var(--ho-white)"/>
+            <path d="M55.4401 47V42.22H23.5701V46.99L55.4401 47Z"  fill="var(--ho-white)"/>
+         </symbol>
+            
+
+
     </svg>
+    <style>
+        header .navbar{
+            display: block; position: relative;
+            width: 100%; overflow: hidden; height:80px ; 
+        }
+        .navbar .container{ 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 96%;
+            margin: 0 auto;
+            height: 100%;
+            position: relative;            
+        }
+        .navbar .container ul:first-child,
+        .navbar .container ul:last-child{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: hidden;
+            gap:5vw;
+            font-weight: 800;
+            font-size:0.95rem ;  
+            
+        }
+        
+
+        .navbar .container ul:first-child{} 
+        .navbar .container ul:last-child{}
+        @media screen and (max-width: 960px) {
+            .navbar .container ul:first-child{ display: none;}  
+            .navbar .container ul:last-child li:nth-child(1),
+            .navbar .container ul:last-child li:nth-child(2){ display: none;}
+        }
+
+
+    </style>
     <header>
+        <nav class="navbar">
+            <div class="container">                
+                    <ul>
+                        <li><a href="/product/dap/" >DAP</a></li>
+                        <li><a href="/product/earphone/" >EARPHONE</a></li>
+                        <li><a href="/product/mp3/" >MP3</a></li>
+                    </ul>                
+
+                    <a href="http://www.cowonglobal.com/"><svg  width="134"  height="26"><use xlink:href="#cowon" ></use></svg> </a>
+
+                    <ul>
+                        <li><a href="/support/" >SUPPORT</a></li>
+                        <li><a href="/shop/" >SHOP</a></li>
+                        <li><svg  width="79" height="79"><use xlink:href="#hamburger" ></use></svg></li>
+                    </ul>
+
+            </div>            
+        </nav>
 
 
-        <style>
-            .b{border: 1px dotted forestgreen;}
 
-            .container-fluid{ 
-                display: block;
-                position: relative;
-                width: 100vw;
-                height: 100vh;
-                overflow: hidden;
-                background-color: var(--ho-white);                
-            }
-            .navbar-popup{ 
-                border-color:var(--ho-black);
-                }
-            .navbar-popup--bg{ display: block;      }
-            .navbar-popup--bg  svg{
-                display: block;
-                position: absolute;     
-                width: 337px;
-                height: 80px;                    }
-            .navbar-popup--bg svg:nth-child(1){
-                transform: rotate(180deg) translateX(-50%) scale(1.4,1);
-                top: -1px;
-                right:20px ;                           }
-            .navbar-popup--bg svg:nth-child(2){
-                transform: rotate(0deg) translateX(-50%) scale(1.5,1);
-                bottom: 80px;
-                left:60px;                         }
-            @media screen and (max-width: 960px) {
-                .navbar-popup--bg  svg{ width: 287px; height: 75px;}
-                .navbar-popup--bg svg:nth-child(1){                right:0 ;     transform: rotate(180deg) translateX(-50%) scale(1,1);                      }
-                .navbar-popup--bg svg:nth-child(2){                left:0 ;          transform: rotate(0deg) translateX(-50%) scale(1,1);                  }
-            }
-            .navbar-popup--close{
-                display: block;
-                position:absolute;
-                transform: translate(-50%,50%);
-                right: 0;
-                top: 10px; 
-            }
-            .navbar-popup--close svg{ width: 30px; height: 30px ; fill:var(--ho-white) ; mix-blend-mode: difference;}  
-            .navbar-popup--icon{
-                display: block;
-                position:absolute;
-                transform: translate(0%,0%);
-                right: 0;
-                bottom: 0px; 
-                width: 100%;
-                height: 82px;
-                text-align: left;
-                background-color: var(--ho-black);                
-            }
-            .navbar-popup--icon svg{ width: 65px; height: 65px ; }   
-            .navbar-popup--icon a:first-child svg{margin-left: 20px;}   
-            .navbar-popup--icon>svg{ float: right; cursor: pointer; }
-            .navbar-popup--logo{
-                display: block;
-                position:absolute;
-                left:100px;
-                top:100px;      
-                cursor: pointer;
-            }
-            .navbar-popup--logo svg{ display: block; width: 262px; height:130px;}
-            @media screen and (max-width: 960px) {
-                .navbar-popup--logo{
-                left: 8vw;
-                top: 5vh;    
-                }
-                .navbar-popup--logo svg{ width: 212px; height:100px;}
-            }
-        </style>
+
+
+
+
+
+
+
 
         <div class="container-fluid z-8 navbar-popup">
             <div class="navbar-popup--bg ">
@@ -169,205 +171,84 @@
                 <a href="http://www.cowonglobal.com/">
                     <svg  width="202" height="60"><use xlink:href="#cowon_echo" fill="var(--ho-black)"></use></svg>                           
                 </a>
-            </div>      
- 
-            
-            <style>
-                .navbar-popup--menu{ 
-                    
-                    display: block;
-                    width: 400px;
-                    position: relative;
-                    margin-left: 100px;
-                    margin-top: 260px;
-                    text-align: left;
-
-                }
-                @media screen and (max-width: 960px) {
-                        .navbar-popup--menu{ 
-                            display: flex;
-                            position: relative;
-                            flex-direction:column;
-                            justify-content: flex-start;
-                            height: 70vh;
-                            width: 84vw;
-                            margin: 0 auto; 
-                            gap: 6vh;
-                            left: 0;
-                            top: 260px;
-                            transform: translateY(0%); 
-                        }
-                }
-                .navbar-popup--menu h5, .navbar-popup--menu h6{  font-weight: 800;}
-                
-                .navbar-popup--menu .navbar-popup--menu__a{
-                    position: absolute;
-                    display: flex;
-                    flex-direction: column;
-                    left: 550px;               
-                    top: -160px; 
-                }
-                .navbar-popup--menu .navbar-popup--menu__a h5{
-                    font-size: var(--ho-display-1);
-                    letter-spacing: 1.6rem;
-                }
-                .navbar-popup--menu .navbar-popup--menu__b h6{
-                    font-size: var(--ho-display-5);
-                    letter-spacing: 0.4rem;
-                }
-                .navbar-popup--menu .navbar-popup--menu__b{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 40px;
-                }
-                
-                @media screen and (max-width: 960px) {
-                    .navbar-popup--menu .navbar-popup--menu__a,
-                    .navbar-popup--menu .navbar-popup--menu__b{
-                            display: flex;
-                            position: relative;
-                            flex-direction:column;
-                            gap:4vh;
-                            left: 0;
-                            top: 0;
-                            transform: translateY(-15%);       
-                    }
-
-                    .navbar-popup--menu .navbar-popup--menu__a h5{
-                    font-size: var(--ho-head-5);
-                    letter-spacing: 0.6rem;
-                    }
-                    .navbar-popup--menu .navbar-popup--menu__b h6{
-                        font-size:var(--ho-head-6);
-                        letter-spacing: 0.2rem;
-                    }    
-                }
-                .navbar-popup--menu ul{                    
-                    box-sizing: border-box;}
-                /*
-                .navbar-popup--menu ul li{ display: block; overflow: hidden; list-style: none; line-height: 3.2; font-size: var(--ho-display-7); font-weight: 600; border-bottom: 1px solid var(--ho-black);} 
-                .navbar-popup--menu ul li a{ transition: all 2s; display: block; width: 0%; background-color:var(--ho-black); white-space: nowrap;   color: var(--ho-black); }
-                .navbar-popup--menu ul li a:hover{ display: block; width: 100%;  color: var(--ho-white);  background-color:var(--ho-black);}
-
-                .navbar-popup--menu ul li{  height: 0rem; border-width: 0px; transition: all 1s;}
-       
-/*
-                .navbar-popup--menu div div:hover ul li{height: 3.2rem; border-width: 0px;}*/
-                .navbar-popup--menu ul li{ 
-                    display: block; 
-                    overflow: hidden; 
-                    list-style: none; 
-                    line-height: 3.2; 
-                    font-size: var(--ho-display-7); 
-                    font-weight: 600; 
-                    border-bottom: 1px solid var(--ho-gray-500);} 
-
-                label {            background-color: #11cccc;            cursor: pointer;        }
-                #ddmenu_d-toggle,
-                #ddmenu_c-toggle,
-                #ddmenu_b-toggle,
-                #ddmenu_a-toggle {            display: none;        }
-                #ddmenu_d,
-                #ddmenu_c,
-                #ddmenu_b,
-                #ddmenu_a {
-                    -background-color: #ffa500;          
-                    overflow: hidden;
-                    max-height: 0;
-                    -webkit-transition: all 1s ease;
-                    
-                    padding: 0px 0 0 0px;
-                }
-                #ddmenu_d-toggle:checked+#ddmenu_d, 
-                #ddmenu_c-toggle:checked+#ddmenu_c, 
-                #ddmenu_b-toggle:checked+#ddmenu_b, 
-                #ddmenu_a-toggle:checked+#ddmenu_a {
-                                    
-                    padding: 0px 0 0 15px;
-                }
-                #ddmenu_d-toggle:checked+#ddmenu_d{ max-height: 200px;    }
-                #ddmenu_c-toggle:checked+#ddmenu_c{max-height: 200px;    }
-                #ddmenu_b-toggle:checked+#ddmenu_b{max-height: 200px;    }
-                #ddmenu_a-toggle:checked+#ddmenu_a {max-height: 600px;    }
-            </style>
-
-
+            </div>    
             <div class="navbar-popup--menu">
                 <div class="navbar-popup--menu__a">
                     <div>       
-                        <label for="ddmenu_a-toggle"><h5 >DAP</h5></label>
+                        <label for="ddmenu_a-toggle">
+                            <h5>
+                                DAP
+                                <svg ><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg>
+                            </h5>
+                        </label>
                         <input type="checkbox" id="ddmenu_a-toggle" />
                         <ul id="ddmenu_a">
                             <li><a href="/product/dap/" >HOME</a></li>
-                            <li><a href="#" >PLENUE D3</a></li>
-                            <li><a href="#" >PLENUE R2</a></li>
-                            <li><a href="#" >PLENUE L</a></li>
-                            <li><a href="#" >PLENUE 2 mark II</a></li>
-                            <li><a href="#" >PLENUE R</a></li>
-                            <li><a href="#" >PLENUE 2</a></li>
-                        </ul>         
-                        <!--          
-                        <h5 >DAP</h5> 
-                        <ul >
-                            <li><a href="/product/dap/" >HOME</a></li>
-                            <li><a href="#" >PLENUE D3</a></li>
-                            <li><a href="#" >PLENUE R2</a></li>
-                            <li><a href="#" >PLENUE L</a></li>
-                            <li><a href="#" >PLENUE 2 mark II</a></li>
-                            <li><a href="#" >PLENUE R</a></li>
-                            <li><a href="#" >PLENUE 2</a></li>
-                        </ul>-->
-                    </div>
-                    <div >
-                        <h5>EARPHONE</h5> 
-                        <ul >
-                            <li><a href="#" >HOME</a></li>
-                            <li><a href="#" >PE-M10</a></li>
-                            <li><a href="#" >CK20 ANC</a></li>
-                            <li><a href="#" >CK11 Pro</a></li>
-                            <li><a href="#" >CK11</a></li>
-                            <li><a href="#" >PLENUE X30</a></li>
+                            <li><a href="/product/dap/plenue_d3/" >PLENUE D3</a></li>
+                            <li><a href="/product/dap/plenue_r2/" >PLENUE R2</a></li>
+                            <li><a href="/product/dap/plenue_l/" >PLENUE L</a></li>
+                            <li><a href="/product/dap/plenue_2mkii/" >PLENUE 2 mark II</a></li>
+                            <li><a href="/product/dap/plenue_r/" >PLENUE R</a></li>
+                            <li><a href="/product/dap/plenue_2/" >PLENUE 2</a></li>
                         </ul>
                     </div>
                     <div >
-                        <h5>MP3</h5>
-                        <ul>
-                            <li><a href="#" >HOME</a></li>
-                            <li><a href="#" >iAUDIO Hifi</a></li>
-                            <li><a href="#" >iAUDIO U7</a></li>
-                            <li><a href="#" >COWON X7</a></li>
+                        <label for="ddmenu_b-toggle">
+                            <h5 >
+                                EARPHONE
+                                <svg ><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg>
+                            </h5>
+                        </label>
+                        <input type="checkbox" id="ddmenu_b-toggle" />
+                        <ul id="ddmenu_b">
+                            <li><a href="/product/earphone/" >HOME</a></li>
+                            <li><a href="/product/earphone/pe_m10/" >PE-M10</a></li>
+                            <li><a href="/product/earphone/ck20_anc/" >CK20 ANC</a></li>
+                            <li><a href="/product/earphone/ck11_pro/" >CK11 Pro</a></li>
+                            <li><a href="/product/earphone/ck11/" >CK11</a></li>
+                            <li><a href="/product/earphone/plenue_x30/" >PLENUE X30</a></li>
                         </ul>
+                    </div>
+                    <div >
+                        <label for="ddmenu_c-toggle">                            
+                            <h5 >
+                                MP3
+                                <svg  ><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg>
+                            </h5>                            
+                        </label>
+                        <input type="checkbox" id="ddmenu_c-toggle" />
+                        <ul id="ddmenu_c">                            
+                                <li><a href="/product/mp3/" >HOME</a></li>
+                                <li><a href="/product/mp3/iaudio_hifi/">iAUDIO Hifi</a></li>
+                                <li><a href="/product/mp3/iaudio_u7/">iAUDIO U7</a></li>
+                                <li><a href="/product/mp3/cowon_x7/">COWON X7</a></li>                            
+                        </ul>                      
                     </div>
                 </div>
                 <div class="navbar-popup--menu__b">
-                    <div >
-                        <h6>SUPPORT</h6>
-                        <ul class="active">
-                            <li><a href="#" >Notice</a></li>
-                            <li><a href="#" >FAQ/QnA</a></li>
-                            <li><a href="#" >Firmware</a></li>
-                            <li><a href="#" >Manual</a></li>
+                    <div >                        
+                        <label for="ddmenu_d-toggle">
+                            <h6>
+                                SUPPORT
+                                <svg  ><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg>
+                            </h6>
+                        </label>
+                        <input type="checkbox" id="ddmenu_d-toggle" />
+                        <ul id="ddmenu_d">
+                            <li><a href="/support/" >Notice</a></li>
+                            <li><a href="/support/faq_qna/" >FAQ/QnA</a></li>
+                            <li><a href="/support/firmware/" >Firmware</a></li>
+                            <li><a href="/support/manual/" >Manual</a></li>
                         </ul>
                     </div>
                     <div >
-                        <h6>SHOP</h6>
+                        <a href="/shop/"><h6>SHOP</h6></a>
                     </div> 
                     <div >    
-                        <h6>BRAND STORY</h6>
+                        <a href="/brandstory/"><h6>BRAND STORY</h6></a>
                     </div>                      
                 </div>               
-            </div>  
-
-
-
-       
-            <svg  width="36" height="28"><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg> 
-     <!--               <svg  width="52" height="26"><use xlink:href="#arrow_link"  fill="var(--ho-black)"></use></svg>          
--->
-                
-    
-                  
+            </div> 
         </div>
     </header>
 
@@ -375,6 +256,93 @@
 
 
 
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div style="height:100px; background-color:aquamarine;"></div>
+    </div>
+
+
+
+
+
+    <div class="container  " >  
+        <footer class="  py-5  px-0 mx-0" >  
+            <div class="row pb-5 d-none d-lg-block">  
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="202" height="60"><use xlink:href="#cowon_echo" fill="blue"></use></svg> 
+                </a>
+            </div>             
+            <div class="row ">
+                <div class="col-lg-2 col-md-12  pl-2 " >                       
+                    <h5 class="fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">DAP</a></h5> 
+                    <ul class="nav flex-column d-none d-lg-block">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE D3</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE R2</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE L</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE 2 mark II</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE R</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE 2</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                    <h5 class="fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">EARPHONE</a></h5> </h5>
+                    <ul class="nav flex-column d-none d-lg-block">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PE-M10</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CK20 ANC</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CK11 Pro</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CK11</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PLENUE X30</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                    <h5 class="fw-bold pb-3 "><a href="" class=" text-black  text-decoration-none">MP3</a></h5></h5>
+                    <ul class="nav flex-column d-none d-lg-block">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">iAUDIO Hifi</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">iAUDIO U7</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">COWON X7</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                    <h5 class="fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">SUPPORT</a></h5></h5>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                    <h5 class="fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">SHOP</a></h5></h5>
+                </div> 
+                <div class="col-lg-2 col-md-12  text-lg-start text-md-start ">    
+                    <h5 class=" fw-bold pb-3"><a href="" class=" text-black  text-decoration-none">BRAND STORY</a></h5></h5>  
+                </div>  
+            </div>  
+            <div class="row  py-4 my-4 border-top">                   
+                <p class="col-lg-3 col-md-12 text-center text-lg-start   p-0">© 2022 COWON, Inc. All rights reserved.</p> 
+                <ul class="list-inline  col-lg-6   text-center  ">           
+                    <li class="list-inline-item p3 px-2"><a href="#" class="link-dark  text-decoration-none"  >BUSINESS INQUIRY</a></li>
+                    <li class="list-inline-item p3 px-2"><a href="#" class="link-dark  text-decoration-none" >PRIVACY POLICY  </a></li>
+                    <li class="list-inline-item p3 px-2"><a href="#" class="link-dark  text-decoration-none" > TERMS OF SERVICE</a></li>
+                </ul>                 
+                <ul class="list-unstyled d-flex col-lg-3 justify-content-center justify-content-lg-end  ">
+                    <li class="ms-3 px-1"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                    <li class="ms-3 px-1"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#youtube"></use></svg></a></li>
+                    <li class="ms-3 px-1"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+
     
 </body>
 </html>
+
+            <!--  
+            <svg  width="36" height="28"><use xlink:href="#arrow_toggle" fill="none"  stroke="var(--ho-black)" ></use></svg> 
+            <svg  width="52" height="26"><use xlink:href="#arrow_link"  fill="var(--ho-black)"></use></svg>          
+            -->
