@@ -1,11 +1,15 @@
 $(function() {
 
-    $( '.navbar-popup--close' ).click( function() {
-        $('.navbar-popup').css("display","none");
-    });
+    $( '.navbar-popup--close' ).click( function() {       
+         $('.container-fluid.navbar-popup').css("display","none");   
+        
+        
+        });
+    $( '.navbar-popup--open' ).click( function() {        $('.container-fluid.navbar-popup').css("display","block");    });
 
 
 
+//::-webkit-scrollbar{ display: none;}
 
 
     
